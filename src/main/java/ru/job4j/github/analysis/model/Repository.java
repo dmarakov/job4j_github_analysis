@@ -1,6 +1,10 @@
 package ru.job4j.github.analysis.model;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import lombok.Data;
 
 @Data
@@ -12,4 +16,5 @@ public class Repository {
     private Long id;
     private String name;
     private String url;
+    private String ownerLogin;
 }
